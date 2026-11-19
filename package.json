@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "setup:voice": "node --env-file-if-exists=.env.local scripts/setup-voice-agent.mjs"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^1.10.0",
     "next": "16.0.4",
     "react": "19.2.0",
     "react-dom": "19.2.0"
